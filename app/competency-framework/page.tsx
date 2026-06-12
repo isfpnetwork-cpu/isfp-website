@@ -38,7 +38,7 @@ export default function FrameworkPage() {
           </div>
         </div>
       </Section>
-      <CTA title="Interested in the assessment pilot?" body="ISFP will use the framework as a foundation for future capability assessment and reporting." href="/capability-assessment" label="Register pilot interest" />
+      <CTA title="Interested in shaping the framework?" body="ISFP is inviting early contributors to support future capability standards, assessment design and professional pathways." href="/founding-community" label="Join the founding community" />
     </>
   );
 }

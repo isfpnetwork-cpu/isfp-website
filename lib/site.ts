@@ -4,7 +4,7 @@ export const site = {
   primaryDomain: "isfpglobal.org",
   secondaryDomain: "isfpglobal.com",
   url: "https://isfpglobal.org",
-  email: "hello@isfpglobal.org",
+  email: "isfp.network@gmail.com",
   description:
     "A global professional body developing sustainable finance capability, standards and lifelong learning pathways."
 };
@@ -14,8 +14,7 @@ export const navigation = [
   { label: "Why ISFP Exists", href: "/why-isfp-exists" },
   { label: "Framework", href: "/competency-framework" },
   { label: "Assessment", href: "/capability-assessment" },
-  { label: "Membership", href: "/membership" },
-  { label: "Advisory", href: "/advisory-board-working-groups" },
+  { label: "Founding Community", href: "/founding-community" },
   { label: "Resources", href: "/resources-insights" },
   { label: "Contact", href: "/contact" }
 ];

@@ -8,9 +8,9 @@ type Option = {
 };
 
 const defaultInterests: Option[] = [
-  { label: "Professional membership", value: "membership" },
+  { label: "Founding community", value: "founding-community" },
   { label: "Capability assessment pilot", value: "assessment" },
-  { label: "Advisory board or working group", value: "advisory" },
+  { label: "Advisory or working group", value: "advisory" },
   { label: "Partnership or institutional engagement", value: "partnership" },
   { label: "Resources and updates", value: "resources" }
 ];

@@ -23,7 +23,7 @@ export default function AssessmentPage() {
               <li>Potential organisational dashboards for teams and institutions.</li>
             </ul>
           </div>
-          <InterestForm title="Assessment pilot interest" submitLabel="Register pilot interest" interests={[{ label: "Individual pilot participant", value: "individual" }, { label: "Institutional pilot", value: "institution" }, { label: "Research or education partner", value: "partner" }]} />
+          <InterestForm title="Register Interest in the ISFP Assessment Pilot" submitLabel="Register pilot interest" interests={[{ label: "Individual pilot participant", value: "individual" }, { label: "Institutional pilot", value: "institution" }, { label: "Research or education partner", value: "partner" }]} />
         </div>
       </Section>
     </>

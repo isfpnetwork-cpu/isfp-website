@@ -20,7 +20,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <Link href="/membership" className="focus-ring hidden rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white transition hover:bg-ink sm:inline-flex">
+          <Link href="/founding-community" className="focus-ring hidden rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white transition hover:bg-ink sm:inline-flex">
             Join the founding community
           </Link>
         </div>

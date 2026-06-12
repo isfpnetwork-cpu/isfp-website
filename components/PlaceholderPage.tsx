@@ -21,7 +21,7 @@ export function PlaceholderPage({
             This route is intentionally prepared for future functionality. It can later connect to authentication, database records, reporting logic, charts, payments or learning management tools without changing the public website structure.
           </p>
           <div className="mt-6">
-            <ButtonLink href="/membership" variant="secondary">Register interest</ButtonLink>
+            <ButtonLink href="/founding-community" variant="secondary">Register interest</ButtonLink>
           </div>
         </div>
       </Section>

@@ -20,7 +20,7 @@ export default function ContactPage() {
             <p className="mt-4 text-base leading-8 text-slate">
               Primary website: {site.primaryDomain}
               <br />
-              Email placeholder: {site.email}
+              Email: {site.email}
             </p>
           </div>
           <InterestForm title="Contact form" submitLabel="Send enquiry" />
