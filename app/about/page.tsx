@@ -106,7 +106,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sage">Long-term ambition</p>
             <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">Supporting sustainable finance as a recognised profession.</h2>
             <p className="mt-5 text-sm leading-7 text-white/75">
-              ISFP's long-term role is to provide the standards, assessment, CPD, governance and professional community needed for sustainable finance to develop with greater consistency, credibility and trust.
+              ISFP&apos;s long-term role is to provide the standards, assessment, CPD, governance and professional community needed for sustainable finance to develop with greater consistency, credibility and trust.
             </p>
           </div>
           <div className="grid gap-4">

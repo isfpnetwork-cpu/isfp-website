@@ -64,7 +64,7 @@ export default function FoundingCommunityPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sage">Future pathway</p>
             <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">From early community to recognised professional pathway.</h2>
             <p className="mt-5 text-sm leading-7 text-white/75">
-              The founding community is the bridge between today's establishment work and future ISFP membership, assessment and professional recognition pathways.
+              The founding community is the bridge between today&apos;s establishment work and future ISFP membership, assessment and professional recognition pathways.
             </p>
           </div>
           <div className="grid gap-3">
