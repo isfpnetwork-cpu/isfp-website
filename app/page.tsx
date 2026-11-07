@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Card } from "@/components/Card";
-import { CTA } from "@/components/CTA";
 import { Hero } from "@/components/Hero";
 import { NewsletterForm } from "@/components/Forms";
 import { Section } from "@/components/Section";
@@ -71,7 +70,7 @@ export default function Home() {
           ))}
         </div>
       </Section>
-      <Section tone="navy">
+      <Section tone="navy" className="border-b border-white/10">
         <NewsletterForm source="/">
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {["Framework updates", "Professional practice notes", "Research and reports", "Community announcements"].map((item) => (
@@ -80,7 +79,6 @@ export default function Home() {
           </div>
         </NewsletterForm>
       </Section>
-      <CTA title="Help shape the institute." body="ISFP is inviting early participation from professionals and institutions who want to contribute to credible sustainable finance capability development." href="/founding-community" label="Register interest" />
     </>
   );
 }
