@@ -34,7 +34,7 @@ export default function AboutPage() {
       <Section tone="white">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div className="rounded-md border border-gold/40 bg-ivory p-8">
-            <Image src="/brand/isfp-primary-logo.svg" alt="ISFP primary logo" width={360} height={360} className="mx-auto h-56 w-56 sm:h-64 sm:w-64" />
+            <Image src="/brand/isfp-wordmark.svg" alt="ISFP primary logo" width={365} height={140} className="mx-auto h-auto w-full max-w-[360px] object-contain" />
             <div className="mt-8 border-t border-gold pt-6">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">Professional body in formation</p>
               <p className="mt-3 font-serif text-2xl leading-snug text-navy">

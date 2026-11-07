@@ -21,13 +21,7 @@ export default function ResourcesPage() {
         </div>
       </Section>
       <Section tone="navy">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          <div>
-            <h2 className="font-serif text-3xl">Receive new resources.</h2>
-            <p className="mt-3 text-sm leading-7 text-white/75">Sign up for updates when ISFP publishes framework notes, pilot invitations and professional resources.</p>
-          </div>
-          <NewsletterForm />
-        </div>
+        <NewsletterForm source="/resources-insights" />
       </Section>
     </>
   );

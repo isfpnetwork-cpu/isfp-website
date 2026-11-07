@@ -6,7 +6,13 @@ export function Hero() {
     <section className="border-b border-navy/10 bg-ivory">
       <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:px-10">
         <div>
-          <Image src="/brand/isfp-primary-logo.svg" alt="Institute of Sustainable Finance Professionals" width={176} height={176} className="mb-8 h-28 w-28 sm:h-32 sm:w-32" priority />
+          <div className="relative mb-8 w-full max-w-[480px]">
+            <Image src="/brand/isfp-wordmark.svg" alt="ISFP" width={365} height={140} className="h-auto w-full object-contain object-left" priority />
+            <p className="absolute left-[33.15%] right-0 top-[69%] text-[10px] font-medium leading-[1.35] text-navy sm:text-sm">
+              <span className="block">INSTITUTE OF SUSTAINABLE</span>
+              <span className="block">FINANCE PROFESSIONALS</span>
+            </p>
+          </div>
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-gold">Global professional body in formation</p>
           <h1 className="max-w-5xl font-serif text-4xl leading-tight text-navy sm:text-5xl lg:text-6xl">
             Building Sustainable Finance Capability, Standards & Professionalism.

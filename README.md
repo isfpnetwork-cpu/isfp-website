@@ -16,3 +16,8 @@ Install dependencies, then run the development server:
 ```bash
 npm install
 npm run dev
+```
+
+## Newsletter
+
+See the [newsletter setup and verification guide](docs/newsletter-setup.md).

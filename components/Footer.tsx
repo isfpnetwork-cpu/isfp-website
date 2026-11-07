@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-10">
         <div>
-          <Image src="/brand/isfp-white-blue-logo.svg" alt="ISFP" width={96} height={96} className="mb-6 h-20 w-20" />
+          <Image src="/brand/isfp-wordmark-light.svg" alt="Institute of Sustainable Finance Professionals" width={880} height={335} className="mb-6 h-auto w-full max-w-[280px] object-contain object-left" />
           <p className="max-w-xl text-sm leading-7 text-white/75">
             The Institute of Sustainable Finance Professionals is being established as a global professional body for capability, standards and lifelong learning in sustainable finance.
           </p>

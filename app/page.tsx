@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Card } from "@/components/Card";
 import { CTA } from "@/components/CTA";
 import { Hero } from "@/components/Hero";
@@ -51,36 +52,33 @@ export default function Home() {
         </div>
       </Section>
       <Section tone="white">
-        <div className="grid gap-6 lg:grid-cols-3">
+        <h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">What We&apos;re Building</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-slate">
+          Developing the standards, tools, knowledge and professional community to advance sustainable finance practice.
+        </p>
+        <div className="mt-8 grid gap-6 md:auto-rows-fr md:grid-cols-2">
           {[
-            ["Future Capability Assessment", "A professional capability tool for understanding strengths, development needs and progression pathways across domains of practice."],
-            ["Founding Community", "A route for professionals, institutions, educators and policymakers to help shape standards, working groups and assessment pilots."],
-            ["Resources & Insights", "A public intellectual hub for framework updates, practice notes, research, case studies and professional commentary."]
-          ].map(([title, body]) => (
-            <div key={title} className="rounded-md border border-navy/10 bg-ivory p-6">
-              <div className="mb-5 h-1 w-14 bg-gold" />
-              <h3 className="font-serif text-2xl text-navy">{title}</h3>
+            ["Professional Standards & Capability", "Establishing the frameworks and tools to define, assess and benchmark sustainable finance capability across individuals and organisations.", "/competency-framework"],
+            ["Community & Collaboration", "Connecting professionals, educators and institutions to share knowledge, build relationships and advance sustainable finance practice.", "/founding-community"],
+            ["Research & Insights", "Generating and sharing research, practical insights and thought leadership to inform professional practice and support the development of the sector.", "/resources-insights"],
+            ["Learning & Professional Development", "Supporting continuous professional learning, career progression and the development of future professional recognition pathways.", "/cpd"]
+          ].map(([title, body, href]) => (
+            <Link key={href} href={href} className="focus-ring group block rounded-md border border-sage/40 bg-ivory p-6 transition hover:border-sage">
+              <div className="mb-5 h-1 w-14 bg-gold" aria-hidden="true" />
+              <h3 className="font-serif text-2xl text-navy underline decoration-sage underline-offset-4 group-hover:decoration-gold">{title}</h3>
               <p className="mt-3 text-sm leading-7 text-slate">{body}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </Section>
       <Section tone="navy">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sage">Latest insights and resources</p>
-            <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">Follow the development of the institute.</h2>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-white/75">
-              Receive updates on competency framework development, founding community opportunities, assessment pilot invitations and practical sustainable finance resources.
-            </p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {["Framework updates", "Professional practice notes", "Research and reports", "Community announcements"].map((item) => (
-                <div key={item} className="rounded-md border border-white/15 bg-white/10 p-4 text-sm font-medium text-white">{item}</div>
-              ))}
-            </div>
+        <NewsletterForm source="/">
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {["Framework updates", "Professional practice notes", "Research and reports", "Community announcements"].map((item) => (
+              <div key={item} className="rounded-md border border-white/15 bg-white/10 p-4 text-sm font-medium text-white">{item}</div>
+            ))}
           </div>
-          <NewsletterForm />
-        </div>
+        </NewsletterForm>
       </Section>
       <CTA title="Help shape the institute." body="ISFP is inviting early participation from professionals and institutions who want to contribute to credible sustainable finance capability development." href="/founding-community" label="Register interest" />
     </>
