@@ -4,7 +4,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 export function Hero() {
   return (
     <section className="border-b border-navy/10 bg-ivory">
-      <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:px-10">
+      <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:px-10 xl:max-w-[1440px] xl:grid-cols-[minmax(0,1fr)_30.6rem]">
         <div>
           <div className="relative mb-8 w-full max-w-[480px]">
             <Image src="/brand/isfp-wordmark.svg" alt="ISFP" width={365} height={140} className="h-auto w-full object-contain object-left" priority />
