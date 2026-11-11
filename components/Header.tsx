@@ -8,14 +8,14 @@ export function Header() {
       <a href="#main" className="focus-ring sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2">
         Skip to content
       </a>
-      <div className="mx-auto flex min-h-20 max-w-7xl items-center gap-5 px-5 py-2 sm:gap-8 sm:px-8 lg:px-10">
-        <Link href="/" aria-label="Institute of Sustainable Finance Professionals home" className="focus-ring shrink-0 rounded-md">
-          <Image src="/brand/isfp-wordmark.svg" alt="ISFP" width={365} height={140} className="h-auto w-28 object-contain sm:w-40 lg:w-44" priority />
+      <div className="mx-auto flex min-h-20 max-w-7xl items-center gap-5 px-5 py-2 sm:gap-8 sm:px-8 lg:px-10 xl:max-w-[1440px] 2xl:max-w-none 2xl:px-20">
+        <Link href="/" aria-label="Institute of Sustainable Finance Professionals home" className="focus-ring shrink-0 rounded-md lg:ml-7 2xl:ml-5">
+          <Image src="/brand/isfp-header-symbol.svg" alt="ISFP symbol" width={92} height={130} className="h-14 w-auto object-contain sm:h-16 lg:h-[88px] 2xl:h-28" priority />
         </Link>
         <nav aria-label="Primary navigation" className="min-w-0 flex-1 overflow-x-auto">
-          <div className="flex min-w-max justify-end gap-4 py-2 lg:gap-5">
+          <div className="flex min-w-max justify-end gap-4 py-2 lg:gap-3 xl:gap-5 2xl:gap-7">
             {navigation.map((item) => (
-              <Link key={item.href} href={item.href} className="focus-ring shrink-0 whitespace-nowrap rounded-sm px-1 py-1 text-sm font-medium text-navy/80 transition hover:text-navy">
+              <Link key={item.href} href={item.href} className="focus-ring shrink-0 whitespace-nowrap rounded-sm px-1 py-1 text-sm font-bold text-navy transition hover:text-navy 2xl:text-lg">
                 {item.label}
               </Link>
             ))}
