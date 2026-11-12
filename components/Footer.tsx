@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { futureRoutes, navigation, site } from "@/lib/site";
+import { navigation, site } from "@/lib/site";
 
 export function Footer() {
   return (
     <footer className="bg-navy text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-10">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.4fr_1fr] lg:px-10">
         <div>
           <Image src="/brand/isfp-wordmark-light.svg" alt="Institute of Sustainable Finance Professionals" width={880} height={335} className="mb-6 h-auto w-full max-w-[280px] object-contain object-left" />
           <p className="max-w-xl text-sm leading-7 text-white/75">
@@ -20,18 +20,6 @@ export function Footer() {
               <li key={item.href}>
                 <Link href={item.href} className="focus-ring rounded-sm hover:text-white">
                   {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-sage">Future Platform</h2>
-          <ul className="mt-5 space-y-3 text-sm text-white/75">
-            {futureRoutes.map((href) => (
-              <li key={href}>
-                <Link href={href} className="focus-ring rounded-sm hover:text-white">
-                  {href}
                 </Link>
               </li>
             ))}
