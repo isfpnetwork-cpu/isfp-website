@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navigation } from "@/lib/site";
 
 export function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-ivory/95 backdrop-blur">
       <a href="#main" className="focus-ring sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2">
@@ -14,11 +19,14 @@ export function Header() {
         </Link>
         <nav aria-label="Primary navigation" className="min-w-0 flex-1 overflow-x-auto">
           <div className="flex min-w-max justify-end gap-4 py-2 lg:gap-3 xl:gap-5 2xl:gap-7">
-            {navigation.map((item) => (
-              <Link key={item.href} href={item.href} className="focus-ring shrink-0 whitespace-nowrap rounded-sm px-1 py-1 text-sm font-bold text-navy transition hover:text-navy 2xl:text-lg">
-                {item.label}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const active = pathname === item.href || pathname.startsWith(item.href + "/");
+              return (
+                <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined} className={"focus-ring shrink-0 whitespace-nowrap rounded-sm px-1 py-1 text-sm font-bold text-navy transition hover:text-navy 2xl:text-lg" + (active ? " underline decoration-gold decoration-2 underline-offset-8" : "")}>
+                  {item.label}
+                </Link>
+              );
+            })}
           </div>
         </nav>
       </div>

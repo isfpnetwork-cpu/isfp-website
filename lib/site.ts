@@ -13,7 +13,7 @@ export const navigation = [
   { label: "About", href: "/about" },
   { label: "Why ISFP Exists", href: "/why-isfp-exists" },
   { label: "Framework", href: "/competency-framework" },
-  { label: "Assessment", href: "/capability-assessment" },
+  { label: "Membership & Pathways", href: "/membership-pathways" },
   { label: "Founding Community", href: "/founding-community" },
   { label: "Resources", href: "/resources-insights" },
   { label: "Contact", href: "/contact" }
